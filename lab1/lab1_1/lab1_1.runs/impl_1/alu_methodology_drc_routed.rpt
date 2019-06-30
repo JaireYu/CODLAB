@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Mar 29 18:19:55 2019
+| Host         : DESKTOP-MBF5BR3 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file alu_methodology_drc_routed.rpt -pb alu_methodology_drc_routed.pb -rpx alu_methodology_drc_routed.rpx
+| Design       : alu
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 10
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 1          |
+| TIMING-20 | Warning  | Non-clocked latch            | 9          |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell f_reg[2]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) f_reg[1]/CLR, f_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch f_reg[0]/L7 (in f_reg[0] macro) cannot be properly analyzed as its control pin f_reg[0]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch f_reg[1] cannot be properly analyzed as its control pin f_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch f_reg[2] cannot be properly analyzed as its control pin f_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch y_reg[0] cannot be properly analyzed as its control pin y_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch y_reg[1] cannot be properly analyzed as its control pin y_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch y_reg[2] cannot be properly analyzed as its control pin y_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch y_reg[3] cannot be properly analyzed as its control pin y_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch y_reg[4] cannot be properly analyzed as its control pin y_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch y_reg[5] cannot be properly analyzed as its control pin y_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+

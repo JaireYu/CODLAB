@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Multicycles_CPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/A.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/ALU.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/ALUAmux.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/ALUBmux.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/ALUCtrl.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/ALUout.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/B.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/InstructionReg.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/MDR.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/Memmux.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/Outputs_Control.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/PC.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/PCmux.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/RFaddrmux.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/RFdatamux.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/RegFile.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/Shift_left_1.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/Shift_left_2.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/Sign_extend.v" \
+"../../../../Multicycles_CPU.srcs/sources_1/new/Mutlicycles_CPU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,26 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sim_1/new/CPU_tb.v,1557631488,verilog,,,,CPU_tb,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/A.v,1557580367,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALU.v,,A,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALU.v,1557580570,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUAmux.v,,ALU,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUAmux.v,1557580632,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUBmux.v,,ALUAmux,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUBmux.v,1557580793,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUCtrl.v,,ALUBmux,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUCtrl.v,1557581051,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUout.v,,ALUCtrl,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/ALUout.v,1557581104,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/B.v,,ALUout,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/B.v,1557581257,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/InstructionReg.v,,B,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/InstructionReg.v,1557581411,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/MDR.v,,InstructionReg,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/MDR.v,1557585519,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Memmux.v,,MDR,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Memmux.v,1557581554,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Mutlicycles_CPU.v,,Memmux,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Mutlicycles_CPU.v,1557631105,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Outputs_Control.v,,Multicycles_CPU,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Outputs_Control.v,1557628106,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/PC.v,,Outputs_Control,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/PC.v,1557622568,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/PCmux.v,,PC,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/PCmux.v,1557586513,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/RFaddrmux.v,,PCmux,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/RFaddrmux.v,1557582912,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/RFdatamux.v,,RFaddrmux,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/RFdatamux.v,1557582957,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/RegFile.v,,RFdatamux,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/RegFile.v,1557626547,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Shift_left_1.v,,RegFile,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Shift_left_1.v,1557583112,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Shift_left_2.v,,Shift_left_1,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Shift_left_2.v,1557586256,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Sign_extend.v,,Shift_left_2,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sources_1/new/Sign_extend.v,1557585169,verilog,,D:/verilog2/Multicycles_CPU/Multicycles_CPU.srcs/sim_1/new/CPU_tb.v,,Sign_extend,,,../../../../Multicycles_CPU.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/lab2_1/lab2_1.sim/sim_1/synth/func/xsim/lab2_1_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmp
+INFO: [VRFC 10-311] analyzing module lab2_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/lab2_1/lab2_1.srcs/sim_1/new/lab2_1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_1_tb

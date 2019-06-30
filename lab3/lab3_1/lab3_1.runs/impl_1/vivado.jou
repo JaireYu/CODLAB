@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 18 09:13:29 2019
+# Process ID: 21728
+# Current directory: D:/verilog2/lab3_1/lab3_1.runs/impl_1
+# Command line: vivado.exe -log lab3_1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab3_1.tcl -notrace
+# Log file: D:/verilog2/lab3_1/lab3_1.runs/impl_1/lab3_1.vdi
+# Journal file: D:/verilog2/lab3_1/lab3_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab3_1.tcl -notrace

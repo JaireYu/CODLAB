@@ -1,0 +1,107 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  1 19:11:36 2019
+| Host         : DESKTOP-MBF5BR3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    41 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      9 |            1 |
+|     11 |            2 |
+|    16+ |           38 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              49 |           24 |
+| No           | No                    | Yes                    |             240 |           71 |
+| No           | Yes                   | No                     |              40 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1042 |          554 |
+| Yes          | Yes                   | No                     |              11 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|     Clock Signal     |                                       Enable Signal                                      | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------+------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  clk_10HZ_BUFG       | pcpu/id_ex_reg/PCWrite                                                                   | PCrst_IBUF       |                3 |              9 |
+|  clk_0/inst/clk_out1 |                                                                                          | PCrst_IBUF       |                5 |             11 |
+|  clk_0/inst/clk_out1 | vga/v_count                                                                              | PCrst_IBUF       |                6 |             11 |
+|  clk_0/inst/clk_out1 |                                                                                          |                  |                5 |             17 |
+|  clk_0/inst/clk_out1 |                                                                                          | Regrst_IBUF      |                7 |             29 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_26[0]                                                    | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_5[0]                                                     | Regrst_IBUF      |               22 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_23[0]                                                    | Regrst_IBUF      |               17 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_29[0]                                                    | Regrst_IBUF      |               21 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_25[0]                                                    | Regrst_IBUF      |               22 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_24[0]                                                    | Regrst_IBUF      |               14 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_8[0]                                                     | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_27[0]                                                    | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_22[0]                                                    | Regrst_IBUF      |               17 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_9[0]                                                     | Regrst_IBUF      |               20 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_7[0]                                                     | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_28[0]                                                    | Regrst_IBUF      |               12 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_4[0]                                                     | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_3[0]                                                     | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_6[0]                                                     | Regrst_IBUF      |               14 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/E[0]                                                                     | Regrst_IBUF      |               15 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_17[0]                                                    | Regrst_IBUF      |               22 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_2[0]                                                     | Regrst_IBUF      |               14 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_19[0]                                                    | Regrst_IBUF      |               24 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_14[0]                                                    | Regrst_IBUF      |               20 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_21[0]                                                    | Regrst_IBUF      |               13 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_20[0]                                                    | Regrst_IBUF      |               11 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_0[0]                                                     | Regrst_IBUF      |               25 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_16[0]                                                    | Regrst_IBUF      |               17 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_18[0]                                                    | Regrst_IBUF      |               21 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_1[0]                                                     | Regrst_IBUF      |               13 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_13[0]                                                    | Regrst_IBUF      |               18 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_10[0]                                                    | Regrst_IBUF      |               18 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_12[0]                                                    | Regrst_IBUF      |               16 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_11[0]                                                    | Regrst_IBUF      |               28 |             32 |
+|  clk_10HZ_BUFG       | pcpu/mem_wb_reg/WB_RegWrite_reg_15[0]                                                    | Regrst_IBUF      |               14 |             32 |
+|  n_0_2128_BUFG       |                                                                                          |                  |               19 |             32 |
+|  clk_10HZ_BUFG       | pcpu/id_ex_reg/PCWrite                                                                   | Regrst_IBUF      |               13 |             41 |
+|  clk_10HZ_BUFG       | pcpu/DM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                  |               32 |            128 |
+|  clk_10HZ_BUFG       | pcpu/DM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                  |               32 |            128 |
+|  clk_10HZ_BUFG       |                                                                                          | Regrst_IBUF      |               71 |            240 |
++----------------------+------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+
+

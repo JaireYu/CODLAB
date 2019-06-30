@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/lab1_1/lab1_1.srcs/sources_1/new/lab1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/lab1_1/lab1_1.srcs/sim_1/new/fb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fb

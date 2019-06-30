@@ -1,0 +1,62 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUSrcmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUSrcmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/EX_MEM_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardBmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardBmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardCmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardCmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardDmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardDmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardUnit4Beq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit4Beq
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardmuxA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardAmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/HazardDetection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ID_EX_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ID_Flushmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Flushmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/IF_Flushmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_Flushmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/IF_ID_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/MEM_WB_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/MemtoRegmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemtoRegmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PCSrcmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCSrcmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PC_9_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_9_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/RegDstmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegDstmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Shift_Left_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_left_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sim_1/new/Pipeline_CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_CPU_tb

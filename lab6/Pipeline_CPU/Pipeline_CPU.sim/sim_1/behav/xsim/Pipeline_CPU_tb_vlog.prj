@@ -1,0 +1,39 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Pipeline_CPU.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ADD.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ALU.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ALUCtrl.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ALUSrcmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/Compare.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/Control.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/EX_MEM_Reg.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ForwardBmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ForwardCmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ForwardDmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ForwardUnit.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ForwardUnit4Beq.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ForwardmuxA.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/HazardDetection.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ID_EX_Reg.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/ID_Flushmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/IF_Flushmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/IF_ID_Reg.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/MEM_WB_Reg.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/MemtoRegmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/PC.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/PCSrcmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/PC_9_2.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/RegDstmux.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/RegFile.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/Shift_Left_2.v" \
+"../../../../Pipeline_CPU.srcs/sources_1/new/Sign_extend.v" \
+"../../../../Pipeline_CPU.srcs/sim_1/new/Pipeline_CPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

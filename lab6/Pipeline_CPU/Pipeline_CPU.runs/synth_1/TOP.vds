@@ -1,0 +1,797 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 31 18:37:28 2019
+# Process ID: 30252
+# Current directory: D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/TOP.vds
+# Journal file: D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 32504 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 394.195 ; gain = 101.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-30252-DESKTOP-MBF5BR3/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-30252-DESKTOP-MBF5BR3/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Segdisplay32bit' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:100]
+INFO: [Synth 8-6157] synthesizing module 'Segdisplay' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:130]
+INFO: [Synth 8-226] default block is never used [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'Segdisplay' (2#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:130]
+INFO: [Synth 8-226] default block is never used [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'Segdisplay32bit' (3#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:100]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_CPU' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCSrcmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PCSrcmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCSrcmux' (4#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PCSrcmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (5#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_9_2' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PC_9_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_9_2' (6#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/PC_9_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ADD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (7#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ADD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-30252-DESKTOP-MBF5BR3/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (8#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-30252-DESKTOP-MBF5BR3/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IF_Flushmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/IF_Flushmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_Flushmux' (9#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/IF_Flushmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID_Reg' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/IF_ID_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID_Reg' (10#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/IF_ID_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sign_extend' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Sign_extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_extend' (11#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Sign_extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_left_2' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Shift_Left_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_left_2' (12#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Shift_Left_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/RegFile.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (13#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/RegFile.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ForwardCmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardCmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardCmux' (14#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardCmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardDmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardDmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardDmux' (15#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardDmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Compare' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Compare.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Compare' (16#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Compare.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Control' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (17#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_Flushmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ID_Flushmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_Flushmux' (18#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ID_Flushmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX_Reg' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ID_EX_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX_Reg' (19#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ID_EX_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUCtrl' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-226] default block is never used [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUCtrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCtrl' (20#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardAmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardmuxA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardAmux' (21#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardmuxA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardBmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardBmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardBmux' (22#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardBmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUSrcmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUSrcmux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALUSrcmux' (23#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALUSrcmux.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALU.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (24#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegDstmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/RegDstmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegDstmux' (25#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/RegDstmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_Reg' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/EX_MEM_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_Reg' (26#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/EX_MEM_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-30252-DESKTOP-MBF5BR3/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (27#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-30252-DESKTOP-MBF5BR3/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_Reg' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/MEM_WB_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_Reg' (28#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/MEM_WB_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MemtoRegmux' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/MemtoRegmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MemtoRegmux' (29#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/MemtoRegmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardUnit' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardUnit' (30#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetection' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/HazardDetection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetection' (31#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/HazardDetection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardUnit4Beq' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardUnit4Beq.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardUnit4Beq' (32#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ForwardUnit4Beq.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_CPU' (33#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/Pipeline_CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/VGA.v:45]
+	Parameter HS_STA bound to: 56 - type: integer 
+	Parameter HS_END bound to: 176 - type: integer 
+	Parameter HA_STA bound to: 240 - type: integer 
+	Parameter VS_STA bound to: 37 - type: integer 
+	Parameter VS_END bound to: 43 - type: integer 
+	Parameter VA_STA bound to: 66 - type: integer 
+	Parameter LINE bound to: 1040 - type: integer 
+	Parameter SCREEN bound to: 666 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'setRGB' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/VGA.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'setRGB' (34#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/VGA.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (35#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/VGA.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (36#1) [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[31]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[30]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[29]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[28]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[27]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[26]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[25]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[24]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[23]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[22]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[21]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[20]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[19]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[18]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[17]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[16]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[15]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[14]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[13]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[12]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[11]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[10]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[9]
+WARNING: [Synth 8-3331] design setRGB has unconnected port data[8]
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_RegWrite
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_MemRead
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_Rd[4]
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_Rd[3]
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_Rd[2]
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_Rd[1]
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port EX_MEM_Rd[0]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[31]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[30]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[29]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[28]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[27]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[26]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[25]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[24]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[23]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[22]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[21]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[20]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[19]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[18]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[17]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[16]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[15]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[14]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[13]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[12]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[11]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[10]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[1]
+WARNING: [Synth 8-3331] design PC_9_2 has unconnected port PCaddr[0]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[31]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[30]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[29]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[28]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[27]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[26]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[25]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[24]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[23]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[22]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[21]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[20]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[19]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[18]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[17]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[16]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[15]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[14]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[13]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[12]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[11]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[10]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[9]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[8]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[7]
+WARNING: [Synth 8-3331] design ALUCtrl has unconnected port Imm[6]
+WARNING: [Synth 8-3331] design Pipeline_CPU has unconnected port Debug_Addr[7]
+WARNING: [Synth 8-3331] design Pipeline_CPU has unconnected port Debug_Addr[6]
+WARNING: [Synth 8-3331] design Pipeline_CPU has unconnected port Debug_Addr[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.434 ; gain = 157.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 450.434 ; gain = 157.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 450.434 ; gain = 157.813
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'pcpu/IR'
+Finished Parsing XDC File [d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'pcpu/IR'
+Parsing XDC File [d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'pcpu/DM'
+Finished Parsing XDC File [d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'pcpu/DM'
+Parsing XDC File [d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_0'
+Finished Parsing XDC File [d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_0'
+Parsing XDC File [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk'. [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:9]
+Finished Parsing XDC File [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 814.746 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 814.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 814.746 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 814.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 814.746 ; gain = 522.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 814.746 ; gain = 522.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHZ. (constraint file  d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHZ. (constraint file  d:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for pcpu/IR. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for pcpu/DM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 814.746 ; gain = 522.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "reg_file_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RegDst" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALUop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALUSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUCtrlinput" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/verilog2/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/ALU.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 814.746 ; gain = 522.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 42    
+	               28 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 34    
+	  10 Input      1 Bit        Muxes := 6     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+Module Segdisplay32bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module PCSrcmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ADD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module IF_Flushmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module IF_ID_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module Sign_extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 32    
+Module ForwardCmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ForwardDmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 6     
+Module ID_Flushmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module ID_EX_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module ALUCtrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 1     
+Module ForwardAmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ForwardBmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALUSrcmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   9 Input      1 Bit        Muxes := 1     
+Module RegDstmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module EX_MEM_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module MEM_WB_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module MemtoRegmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ForwardUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module HazardDetection 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module setRGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "reg_file_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "control/ALUop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design VGA has unconnected port data[31]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[30]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[29]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[28]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[27]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[26]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[25]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[24]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[23]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[22]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[21]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[20]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[19]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[18]
+WARNING: [Synth 8-3331] design VGA has unconnected port data[17]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[11]' (FDC) to 'pcpu/id_ex_reg/EX_Rd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[12]' (FDC) to 'pcpu/id_ex_reg/EX_Rd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[13]' (FDC) to 'pcpu/id_ex_reg/EX_Rd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[14]' (FDC) to 'pcpu/id_ex_reg/EX_Rd_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[15]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[16]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[17]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[18]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[19]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[20]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[21]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[22]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[23]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[24]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[25]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[26]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[27]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[28]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[29]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[30]' (FDC) to 'pcpu/id_ex_reg/EX_Imm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_Imm_reg[31]' (FDC) to 'pcpu/id_ex_reg/EX_Rd_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pcpu/id_ex_reg/EX_MemtoReg_reg' (FDC) to 'pcpu/id_ex_reg/EX_MemRead_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 814.746 ; gain = 522.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_0/clk_out1' to pin 'clk_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 814.746 ; gain = 522.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 815.590 ; gain = 522.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcpu/regfile/reg_file_reg[0][31] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_0      |         1|
+|2     |dist_mem_gen_0 |         1|
+|3     |dist_mem_gen_1 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0      |     1|
+|2     |dist_mem_gen_0 |     1|
+|3     |dist_mem_gen_1 |     1|
+|4     |BUFG           |     2|
+|5     |CARRY4         |    45|
+|6     |LUT1           |     3|
+|7     |LUT2           |   155|
+|8     |LUT3           |   113|
+|9     |LUT4           |    68|
+|10    |LUT5           |   157|
+|11    |LUT6           |  1068|
+|12    |MUXF7          |   392|
+|13    |MUXF8          |   196|
+|14    |FDCE           |  1285|
+|15    |FDRE           |    68|
+|16    |LD             |    32|
+|17    |IBUF           |     7|
+|18    |OBUF           |    37|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |  3725|
+|2     |  nolabel_line72 |Segdisplay32bit |    31|
+|3     |  pcpu           |Pipeline_CPU    |  3480|
+|4     |    add_ID       |ADD             |     3|
+|5     |    add_IF       |ADD_0           |     3|
+|6     |    alu          |ALU             |    52|
+|7     |    compare      |Compare         |     3|
+|8     |    ex_mem_reg   |EX_MEM_Reg      |   111|
+|9     |    id_ex_reg    |ID_EX_Reg       |   316|
+|10    |    if_id_reg    |IF_ID_Reg       |   191|
+|11    |    mem_wb_reg   |MEM_WB_Reg      |   321|
+|12    |    pc           |PC              |    10|
+|13    |    regfile      |RegFile         |  2371|
+|14    |  vga            |VGA             |    91|
+|15    |    rgbset       |setRGB          |    10|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 874.578 ; gain = 581.957
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 874.578 ; gain = 217.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 874.578 ; gain = 581.957
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 665 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+220 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 874.578 ; gain = 593.430
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.578 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/verilog2/Pipeline_CPU/Pipeline_CPU.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 18:38:37 2019...

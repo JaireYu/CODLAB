@@ -1,0 +1,44 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3fa7b441f3414b448216e56e4c4d9da1 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Pipeline_CPU_tb_behav xil_defaultlib.Pipeline_CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PCSrcmux
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_9_2
+Compiling module xil_defaultlib.ADD
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.IF_Flushmux
+Compiling module xil_defaultlib.IF_ID_Reg
+Compiling module xil_defaultlib.Sign_extend
+Compiling module xil_defaultlib.Shift_left_2
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ForwardCmux
+Compiling module xil_defaultlib.ForwardDmux
+Compiling module xil_defaultlib.Compare
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ID_Flushmux
+Compiling module xil_defaultlib.ID_EX_Reg
+Compiling module xil_defaultlib.ALUCtrl
+Compiling module xil_defaultlib.ForwardAmux
+Compiling module xil_defaultlib.ForwardBmux
+Compiling module xil_defaultlib.ALUSrcmux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RegDstmux
+Compiling module xil_defaultlib.EX_MEM_Reg
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.MEM_WB_Reg
+Compiling module xil_defaultlib.MemtoRegmux
+Compiling module xil_defaultlib.ForwardUnit
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.ForwardUnit4Beq
+Compiling module xil_defaultlib.Pipeline_CPU
+Compiling module xil_defaultlib.Pipeline_CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipeline_CPU_tb_behav
