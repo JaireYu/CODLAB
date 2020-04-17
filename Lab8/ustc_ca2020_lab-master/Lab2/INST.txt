@@ -1,0 +1,64 @@
+ADD     0000000 rs2 rs1 000 Rd 0110011
+SUB     0100000 rs2 rs1 000 rd 0110011
+SLL     0000000 rs2 rs1 001 rd 0110011
+SLT     0000000 rs2 rs1 010 rd 0110011
+SLTU    0000000 rs2 rs1 011 rd 0110011
+XOR     0000000 rs2 rs1 100 rd 0110011
+SRL     0000000 rs2 rs1 101 rd 0110011
+SRA     0100000 rs2 rs1 101 rd 0110011
+OR      0000000 rs2 rs1 110 rd 0110011
+AND     0000000 rs2 rs1 111 rd 0110011
+
+
+SLLI    000000 shamt rs1 001 rd 0010011
+SRLI    000000 shamt rs1 101 rd 0010011
+SRAI    010000 shamt rs1 101 rd 0010011
+SLTI    immediate[11:0] rs1 010 rd 0010011
+SLTIU   immediate[11:0] rs1 011 rd 0010011
+XORI    immediate[11:0] rs1 100 rd 0010011
+ORI     Immediate[11:0] rs2 rs1 110 rd 0010011
+ANDI    immediate[11:0] rs1 111 rd 0010011
+JALR    offset[11:0] rs1 010 rd 1100111
+LB      offset[11:0] rs1 000 rd 0000011
+LH      offset[11:0] rs1 001 rd 0000011
+LW      offset[11:0] rs1 010 rd 0000011
+LBU     offset[11:0] rs1 100 rd 0000011
+LHU     offset[11:0] rs1 101 rd 0000011
+
+
+SB      offset[11:5] rs2 rs1 000 offset[4:0] 0100011
+SH      offset[11:5] rs2 rs1 001 offset[4:0] 0100011
+SW      offset[11:5] rs2 rs1 010 offset[4:0] 0100011
+
+
+BEQ     offset[12|10:5] rs2 rs1 000 offset[4:1|11] 1100011
+BNE     offset[12|10:5] rs2 rs1 001 offset[4:1|11] 1100011
+BLTU    offset[12|10:5] rs2 rs1 110 offset[4:1|11] 1100011
+BGE     offset[12|10:5] rs2 rs1 101 offset[4:1|11] 1100011
+BGEU    offset[12|10:5] rs2 rs1 111 offset[4:1|11] 1100011
+
+LUI     immediate[31:12] rd 0110111
+AUIPC   immediate[31:12] rd 0010111
+
+JAL     offset[20|10:1|11|19:12] rd 1101111
+
+
+//  功能说明
+    //  对指令进行译码，将其翻译成控制信号，传输给各个部件
+// 输入
+    // Inst              待译码指令
+// 输出
+    // jal               jal跳转指令
+    // jalr              jalr跳转指令
+    // op2_src           ALU的第二个操作数来源。为1时，op2选择imm，为0时，op2选择reg2
+    // ALU_func          ALU执行的运算类型
+    // br_type           branch的判断条件，可以是不进行branch
+    // load_npc          写回寄存器的值的来源（PC或者ALU计算结果）, load_npc == 1时选择PC
+    // wb_select         写回寄存器的值的来源（Cache内容或者ALU计算结果），wb_select == 1时选择cache内容
+    // load_type         load类型
+    // src_reg_en        指令中src reg的地址是否有效，src_reg_en[1] == 1表示reg1被使用到了，src_reg_en[0]==1表示reg2被使用到了
+    // reg_write_en      通用寄存器写使能，reg_write_en == 1表示需要写回reg
+    // cache_write_en    按字节写入data cache
+    // imm_type          指令中立即数类型
+    // alu_src1          alu操作数1来源，alu_src1 == 0表示来自reg1，alu_src1 == 1表示来自PC
+    // alu_src2          alu操作数2来源，alu_src2 == 2’b00表示来自reg2，alu_src2 == 2'b01表示来自reg2地址，alu_src2 == 2'b10表示来自立即数

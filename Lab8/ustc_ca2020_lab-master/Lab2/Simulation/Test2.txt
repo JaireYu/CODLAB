@@ -1,0 +1,24 @@
+
+Test2.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	03c08093          	addi	ra,ra,60
+   10058:	5dc08093          	addi	ra,ra,1500
+   1005c:	5dc08093          	addi	ra,ra,1500
+   10060:	5dc08093          	addi	ra,ra,1500
+   10064:	5dc08093          	addi	ra,ra,1500
+   10068:	5dc08093          	addi	ra,ra,1500
+   1006c:	5dc08093          	addi	ra,ra,1500
+   10070:	5dc08093          	addi	ra,ra,1500
+   10074:	5dc08093          	addi	ra,ra,1500
+   10078:	5dc08093          	addi	ra,ra,1500
+   1007c:	5dc08093          	addi	ra,ra,1500
+   10080:	faa00113          	li	sp,-86
+   10084:	00000013          	nop
+   10088:	00000013          	nop
+   1008c:	00000013          	nop
+   10090:	00000013          	nop
+   10094:	0020a023          	sw	sp,0(ra)
