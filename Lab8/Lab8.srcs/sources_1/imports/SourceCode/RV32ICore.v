@@ -11,9 +11,9 @@
 
 
 //功能说明
-    // RV32I Core的顶层模�?
+    // RV32I Core的顶层模�??
 //实验要求  
-    // 添加CSR指令的数据�?�路和相应部�?
+    // 添加CSR指令的数据�?�路和相应部�??
 
 module RV32ICore(
     input wire CPU_CLK,
@@ -29,6 +29,9 @@ module RV32ICore(
     output wire [31:0] gp,
     output wire [31:0] sp,
     output wire [31:0] ra,
+    output wire [31:0] t0,
+    output wire [31:0] t1,
+    output wire [31:0] t2,
     output wire bubbleF, flushF, bubbleD, flushD, bubbleE, flushE, bubbleM, flushM, bubbleW, flushW,
     output wire [31:0] jal_target, br_target,
     output wire jal, br,
@@ -59,7 +62,16 @@ module RV32ICore(
     output wire [31:0] ALU_op1, ALU_op2, ALU_out,
     output wire [31:0] dealt_reg2,
     output wire [31:0] result, result_MEM,
-    output wire [1:0] op1_sel, op2_sel, reg2_sel
+    output wire [1:0] op1_sel, op2_sel, reg2_sel,
+    output wire csr_ID, csr_EX,csr_MEM, csr_WB,  
+    output wire [2:0]CSR_func_ID, CSR_func_EX,
+    output wire [11:0]CsrAddr_EX, CsrAddr_MEM, CsrAddr_WB,
+    output wire [31:0]CsrData_ID, CsrData_EX, CsrData_MEM, CsrData_WB, 
+    output wire [31:0]Csr_imm_EX, Csr_imm_ID,
+    output wire [31:0] Reg1_after_bypass,
+    output wire [31:0] Csr_op1,
+    output wire [1:0] Csr_Bypass,
+    output wire [31:0] CsrAlu_out
     );
 	//wire values definitions
 //    wire bubbleF, flushF, bubbleD, flushD, bubbleE, flushE, bubbleM, flushM, bubbleW, flushW;
@@ -93,10 +105,7 @@ module RV32ICore(
 //    wire [31:0] dealt_reg2;
 //    wire [31:0] result, result_MEM;
 //    wire [1:0] op1_sel, op2_sel, reg2_sel;
-
-
-
-
+    
     // Adder to compute PC + 4
     assign PC_4 = PC_IF + 4;
     // MUX for op2 source
@@ -104,10 +113,12 @@ module RV32ICore(
     // Adder to compute PC_ID + Imm - 4
     assign jal_target = PC_ID + op2 - 4;
     // MUX for ALU op1
-    assign ALU_op1 = (op1_sel == 2'h0) ? result_MEM :
+    assign Reg1_after_bypass = (op1_sel == 2'h0) ? result_MEM :
                                          ((op1_sel == 2'h1) ? data_WB :
                                                               (op1_sel == 2'h2) ? (PC_EX - 4) :
                                                                                   reg1_EX);
+    assign Csr_op1 = (Csr_Bypass == 2'b00)? CsrData_MEM : ((Csr_Bypass == 2'b01)? CsrData_WB :CsrData_EX);
+    assign ALU_op1 = (csr_EX == 1)? Csr_op1 : Reg1_after_bypass;
     // MUX for ALU op2
     assign ALU_op2 = (op2_sel == 2'h0) ? result_MEM :
                                          ((op2_sel == 2'h1) ? data_WB :
@@ -196,10 +207,21 @@ module RV32ICore(
         .reg2(reg2),
         .gp(gp),
         .sp(sp),
-        .ra(ra)
+        .ra(ra),
+        .t0(t0),
+        .t1(t1),
+        .t2(t2)
     );
 
-
+    CSR_RegisterFile CSR_RegisterFile1(
+        .clk(CPU_CLK),
+        .rst(CPU_RST),
+        .write_en(csr_WB),
+        .addr(inst_ID[31:20]), 
+        .wb_addr(CsrAddr_WB),
+        .wb_data(CsrData_WB),
+        .CSRreg(CsrData_ID)
+    );
     ControllerDecoder ControllerDecoder1(
         .inst(inst_ID),
         .jal(jal),
@@ -215,8 +237,12 @@ module RV32ICore(
         .cache_write_en(cache_write_en_ID),
         .alu_src1(alu_src1_ID),
         .alu_src2(alu_src2_ID),
-        .imm_type(imm_type)
+        .imm_type(imm_type),
+        .csr(csr_ID),
+        .CSR_func(CSR_func_ID)
     );
+
+
 
     ImmExtend ImmExtend1(
         .inst(inst_ID[31:7]),
@@ -224,6 +250,10 @@ module RV32ICore(
         .imm(imm)
     );
 
+    CSR_immExtend CSR_immExtend1(
+        .csr_imm_input(inst_ID[19:15]),
+        .csr_imm_out(Csr_imm_ID)
+    );
 
     PC_EX PC_EX1(
         .clk(CPU_CLK),
@@ -307,7 +337,21 @@ module RV32ICore(
         .alu_src2_EX(alu_src2_EX)
     );
 
-
+    CSR_EX CSR_EX1(
+        .clk(CPU_CLK),
+        .bubbleE(bubbleE),
+        .flushE(flushE),
+        .CsrAddr_ID(inst_ID[31:20]),
+        .CsrData_ID(CsrData_ID),
+        .csr_ID(csr_ID),
+        .csr_func_in(CSR_func_ID),
+        .Csr_imm_ID(Csr_imm_ID),
+        .CsrAddr_EX(CsrAddr_EX),
+        .CsrData_EX(CsrData_EX),
+        .csr_EX(csr_EX),
+        .csr_func(CSR_func_EX),
+        .Csr_imm_EX(Csr_imm_EX)
+    );
     // ---------------------------------------------
     // EX stage
     // ---------------------------------------------
@@ -317,6 +361,14 @@ module RV32ICore(
         .op2(ALU_op2),
         .ALU_func(ALU_func_EX),
         .ALU_out(ALU_out)
+    );
+
+    CSR_ALU CSR_ALU1(
+        .csr_imm_in(Csr_imm_EX),
+        .csr_data_in(Csr_op1),
+        .reg1_data_in(Reg1_after_bypass),
+        .csr_func(CSR_func_EX),
+        .csralu_out(CsrAlu_out)
     );
 
     BranchDecision BranchDecision1(
@@ -368,7 +420,17 @@ module RV32ICore(
     );
 
 
-
+    CSR_MEM CSR_MEM1(
+        .clk(CPU_CLK),
+        .bubbleM(bubbleM),
+        .flushM(flushM),
+        .CsrAddr_EX(CsrAddr_EX),
+        .CsrData_EX(CsrAlu_out),
+        .csr_EX(csr_EX),
+        .CsrAddr_MEM(CsrAddr_MEM),
+        .CsrData_MEM(CsrData_MEM),
+        .csr_MEM(csr_MEM)
+    );
     // ---------------------------------------------
     // MEM stage
     // ---------------------------------------------
@@ -407,7 +469,17 @@ module RV32ICore(
         .reg_write_en_WB(reg_write_en_WB)
     );
 
-
+    CSR_WB CSR_WB1(
+        .clk(CPU_CLK),
+        .bubbleW(bubbleW),
+        .flushW(flushW),
+        .CsrAddr_MEM(CsrAddr_MEM),
+        .CsrData_MEM(CsrData_MEM),
+        .csr_MEM(csr_MEM),
+        .CsrAddr_WB(CsrAddr_WB),
+        .CsrData_WB(CsrData_WB),
+        .csr_WB(csr_WB)
+    );
     // ---------------------------------------------
     // WB stage
     // ---------------------------------------------
@@ -447,7 +519,8 @@ module RV32ICore(
         .bubbleW(bubbleW),
         .op1_sel(op1_sel),
         .op2_sel(op2_sel),
-        .reg2_sel(reg2_sel)
+        .reg2_sel(reg2_sel),
+        .CSR_old(Csr_Bypass)
     );  
     	         
 endmodule

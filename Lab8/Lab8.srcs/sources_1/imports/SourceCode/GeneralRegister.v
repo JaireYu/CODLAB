@@ -39,13 +39,19 @@ module RegisterFile(
     output wire [31:0] reg1, reg2,
     output wire [31:0] gp,
     output wire [31:0] sp,
-    output wire [31:0] ra
+    output wire [31:0] ra,
+    output wire [31:0] t0,
+    output wire [31:0] t1,
+    output wire [31:0] t2
     );
     reg [31:0] reg_file[31:1];
     integer i;
     assign gp = reg_file[3];
     assign sp = reg_file[2];
     assign ra = reg_file[1]; 
+    assign t0 = reg_file[5];
+    assign t1 = reg_file[6];
+    assign t2 = reg_file[7];
     // init register file
     initial
     begin

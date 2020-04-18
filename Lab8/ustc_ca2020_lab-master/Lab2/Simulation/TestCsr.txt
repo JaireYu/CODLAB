@@ -1,0 +1,52 @@
+
+TestCsr.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <test2>:
+   10054:	003550f3          	csrrwi	ra,fcsr,10
+   10058:	00200193          	li	gp,2
+   1005c:	00a00293          	li	t0,10
+   10060:	00200313          	li	t1,2
+   10064:	003313f3          	fssr	t2,t1
+   10068:	00728463          	beq	t0,t2,10070 <test3>
+   1006c:	0600006f          	j	100cc <fail>
+
+00010070 <test3>:
+   10070:	003160f3          	csrrsi	ra,fcsr,2
+   10074:	00300193          	li	gp,3
+   10078:	00200e13          	li	t3,2
+   1007c:	01c08463          	beq	ra,t3,10084 <test4>
+   10080:	04c0006f          	j	100cc <fail>
+
+00010084 <test4>:
+   10084:	00400193          	li	gp,4
+   10088:	0031a3f3          	csrrs	t2,fcsr,gp
+   1008c:	00200293          	li	t0,2
+   10090:	00728463          	beq	t0,t2,10098 <test5>
+   10094:	0380006f          	j	100cc <fail>
+
+00010098 <test5>:
+   10098:	00500193          	li	gp,5
+   1009c:	003073f3          	csrrci	t2,fcsr,0
+   100a0:	00600293          	li	t0,6
+   100a4:	00728263          	beq	t0,t2,100a8 <test6>
+
+000100a8 <test6>:
+   100a8:	00600193          	li	gp,6
+   100ac:	0031b3f3          	csrrc	t2,fcsr,gp
+   100b0:	00600313          	li	t1,6
+   100b4:	00730263          	beq	t1,t2,100b8 <test7>
+
+000100b8 <test7>:
+   100b8:	00700193          	li	gp,7
+   100bc:	003052f3          	csrrwi	t0,fcsr,0
+   100c0:	00500263          	beq	zero,t0,100c4 <success>
+
+000100c4 <success>:
+   100c4:	00100193          	li	gp,1
+   100c8:	ffdff06f          	j	100c4 <success>
+
+000100cc <fail>:
+   100cc:	0000006f          	j	100cc <fail>

@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 // 功能说明
-    // 为了代码可读性，定义了常量值
+    // 为了代码可读性，定义了常量�??
 // 实验要求  
     // 无需修改
 
@@ -29,6 +29,15 @@
     `define SLT  4'd8
     `define SLTU  4'd9
     `define LUI  4'd10
+    `define CSR  4'd11
+// CSR_func[2:0]
+    `define CSRRW   3'd0
+    `define CSRRS   3'd1
+    `define CSRRC   3'd2
+    `define CSRRWI   3'd3
+    `define CSRRSI   3'd4
+    `define CSRRCI   3'd5
+    
 // br_type[2:0]
     `define NOBRANCH  3'd0
     `define BEQ  3'd1

@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //  功能说明
-    //  算数运算和逻辑运算功能部件
+    //  算数运算和�?�辑运算功能部件
 // 输入
     // op1               第一个操作数
     // op2               第二个操作数
@@ -41,6 +41,7 @@ module ALU(
             `SLT: ALU_out = ($signed(op1) < $signed(op2)) ? 32'b1 : 32'b0;
             `SLTU:ALU_out = (op1 < op2) ? 32'b1 : 32'b0;
             `LUI: ALU_out = op2;
+            `CSR: ALU_out = op1;
             default:  ALU_out = op1 + op2;
         endcase
     end

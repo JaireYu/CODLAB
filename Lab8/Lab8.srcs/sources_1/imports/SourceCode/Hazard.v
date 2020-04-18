@@ -58,8 +58,11 @@ module HarzardUnit(
     input wire reg_write_en_WB,
     input wire alu_src1,
     input wire [1:0] alu_src2,
+    input wire csr_EX, csr_MEM, csr_WB,
+    input wire [11:0] CsrAddr_EX, CsrAddr_MEM, CsrAddr_WB,
     output reg flushF, bubbleF, flushD, bubbleD, flushE, bubbleE, flushM, bubbleM, flushW, bubbleW,
-    output reg [1:0] op1_sel, op2_sel, reg2_sel
+    output reg [1:0] op1_sel, op2_sel, reg2_sel,
+    output reg [1:0]CSR_old //csr read value, 2'b10 for direct, 2'b00 for MEM_bypass, 2'b01 for WB_bypass
     );
 
     always@(*) begin
@@ -77,6 +80,7 @@ module HarzardUnit(
             op1_sel = 2'b11;
             op2_sel = 2'b11;
             reg2_sel = 2'b10;
+            CSR_old = 2'b10;
         end
         else begin
             flushF=0; 
@@ -127,6 +131,15 @@ module HarzardUnit(
                 end
                 else begin
                     reg2_sel = 2'b10;
+                end
+            end
+            begin
+                if(csr_EX == 1 && csr_MEM == 1 && CsrAddr_EX == CsrAddr_MEM)
+                    CSR_old = 2'b00;
+                else if(csr_EX == 1 && csr_WB == 1 && CsrAddr_EX == CsrAddr_WB)
+                    CSR_old = 2'b01;
+                else begin
+                    CSR_old = 2'b10;
                 end
             end
             begin

@@ -1,2 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchTime="0"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1587191349">
+  <File Type="PA-TCL" Name="RV32ICore.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RV32ICore_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RV32ICore_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RV32ICore.vds"/>
+  <File Type="RDS-UTIL" Name="RV32ICore_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RV32ICore_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RV32ICore.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RV32ICore_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RV32ICore_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/Parameters.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/Parameters.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ALU.v"/>
+        <Attr Name="ImportTime" Val="1586923065"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/AddrEx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/AddrEx.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ExMemSegReg/AddrMem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ExMemSegReg/AddrMem.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/MemWbSegReg/AddrWb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/MemWbSegReg/AddrWb.v"/>
+        <Attr Name="ImportTime" Val="1586794712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/BrTarget.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/BrTarget.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/BranchDecision.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/BranchDecision.v"/>
+        <Attr Name="ImportTime" Val="1586923476"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSR_ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSR_EX.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSR_MEM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSR_RegisterFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSR_WB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSR_immExtend.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ControllerDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ControllerDecoder.v"/>
+        <Attr Name="ImportTime" Val="1586921168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/CtrlEx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/CtrlEx.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ExMemSegReg/CtrlMem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ExMemSegReg/CtrlMem.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/MemWbSegReg/CtrlWb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/MemWbSegReg/CtrlWb.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/Cache/DataCache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/Cache/DataCache.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/DataExtend.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/DataExtend.v"/>
+        <Attr Name="ImportTime" Val="1586925370"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/GeneralRegister.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/GeneralRegister.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/Hazard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/Hazard.v"/>
+        <Attr Name="ImportTime" Val="1586970492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IfIdSegReg/IR.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IfIdSegReg/IR.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ImmExtend.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ImmExtend.v"/>
+        <Attr Name="ImportTime" Val="1586935175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/Cache/InstructionCache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/Cache/InstructionCache.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/NPCGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/NPCGenerator.v"/>
+        <Attr Name="ImportTime" Val="1586935759"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/Op1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/Op1.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/Op2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/Op2.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/PC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/PC.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/PcEx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/PcEx.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IfIdSegReg/PcId.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IfIdSegReg/PcId.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/IdExSegReg/Reg2Ex.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/IdExSegReg/Reg2Ex.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ExMemSegReg/Reg2Mem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ExMemSegReg/Reg2Mem.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/ExMemSegReg/Result.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/ExMemSegReg/Result.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/MemWbSegReg/WbData.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/MemWbSegReg/WbData.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SourceCode/RV32ICore.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../办公文件/体系结构/ustc_ca2020_lab-master/ustc_ca2020_lab-master/Lab2/SourceCode/RV32ICore.v"/>
+        <Attr Name="ImportTime" Val="1586006706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RV32ICore"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

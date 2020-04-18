@@ -12,8 +12,8 @@
 // !!! ALL YOU NEED TO CHANGE IS 4 FILE PATH BELOW !!!	
 //				(they are all optional, you can run cpu without change paths here,if files are failed to open, we will not dump the content to .txt and will not try to initial your bram)
 //////////////////////////////////////////////////////////////////////////////////
-`define DataCacheContentLoadPath "D:\\GithubLocalRepo\\CODLAB\\Lab8\\ustc_ca2020_lab-master\\Lab2\\Simulation\\1testAll.data"
-`define InstCacheContentLoadPath "D:\\GithubLocalRepo\\CODLAB\\Lab8\\ustc_ca2020_lab-master\\Lab2\\Simulation\\1testAll.inst"
+`define DataCacheContentLoadPath "D:\\GithubLocalRepo\\CODLAB\\Lab8\\ustc_ca2020_lab-master\\Lab2\\Simulation\\TestCsr.data"
+`define InstCacheContentLoadPath "D:\\GithubLocalRepo\\CODLAB\\Lab8\\ustc_ca2020_lab-master\\Lab2\\Simulation\\TestCsr.inst"
 `define DataCacheContentSavePath "D:\\GithubLocalRepo\\CODLAB\\Lab8\\ustc_ca2020_lab-master\\Lab2\\Simulation\\DataCacheContent.txt"
 `define InstCacheContentSavePath "D:\\GithubLocalRepo\\CODLAB\\Lab8\\ustc_ca2020_lab-master\\Lab2\\Simulation\\InstCacheContent.txt"
 `define BRAMWORDS 4096  //a word is 32bit, so our bram is 4096*32bit
@@ -65,6 +65,16 @@ module testBench(
     wire [31:0] dealt_reg2;
     wire [31:0] result, result_MEM;
     wire [1:0] op1_sel, op2_sel, reg2_sel;
+    wire [31:0] t0,t1,t2;
+    wire csr_ID, csr_EX,csr_MEM, csr_WB;  
+    wire [2:0]CSR_func_ID, CSR_func_EX;
+    wire [11:0]CsrAddr_EX, CsrAddr_MEM, CsrAddr_WB;
+    wire [31:0]CsrData_ID, CsrData_EX, CsrData_MEM, CsrData_WB; 
+    wire [31:0]Csr_imm_EX, Csr_imm_ID;
+    wire [31:0] Reg1_after_bypass;
+    wire [31:0] Csr_op1;
+    wire [1:0] Csr_Bypass;
+    wire [31:0] CsrAlu_out;
     //generate clock signal
     always #1 CPU_CLK = ~CPU_CLK;
     // Connect the CPU core
@@ -82,6 +92,9 @@ module testBench(
         .gp(gp),
         .sp(sp),
         .ra(ra),
+        .t0(t0),
+        .t1(t1),
+        .t2(t2),
          .bubbleF(bubbleF),
          .flushF(flushF), 
          .bubbleD(bubbleD), 
@@ -120,7 +133,16 @@ module testBench(
      .ALU_op1(ALU_op1),.ALU_op2(ALU_op2),.ALU_out(ALU_out),
      .dealt_reg2(dealt_reg2),
      .result(result),.result_MEM(result_MEM),
-     .op1_sel(op1_sel),.op2_sel(op2_sel), .reg2_sel(reg2_sel)
+     .op1_sel(op1_sel),.op2_sel(op2_sel), .reg2_sel(reg2_sel),
+    .csr_ID(csr_ID),.csr_EX(csr_EX),.csr_MEM(csr_MEM),.csr_WB(csr_WB),  
+    .CSR_func_ID(CSR_func_ID),.CSR_func_EX(CSR_func_EX),
+    .CsrAddr_EX(CsrAddr_EX),.CsrAddr_MEM(CsrAddr_MEM),.CsrAddr_WB(CsrAddr_WB),
+    .CsrData_ID(CsrData_ID),.CsrData_EX(CsrData_EX),.CsrData_MEM(CsrData_MEM),.CsrData_WB(CsrData_WB), 
+    .Csr_imm_EX(Csr_imm_EX),.Csr_imm_ID(Csr_imm_ID),
+    .Reg1_after_bypass(Reg1_after_bypass),
+    .Csr_op1(Csr_op1),
+    .Csr_Bypass(Csr_Bypass),
+    .CsrAlu_out(CsrAlu_out)
         );
     //define file handles
     integer LoadDataCacheFile;
